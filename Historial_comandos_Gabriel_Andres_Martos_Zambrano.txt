@@ -1,0 +1,143 @@
+sudo apt update && sudo apt upgrade
+sudo apt install bzip2
+sudo poweroff
+lsmod | grep vboxguest
+localectl status
+sudo dpkg-reconfigure keyboard-configuration
+sudo reboot
+echo '&'
+setxkbmap -query
+setxkbmap latam
+setxkbmap es
+sudo nano /etc/default/keyboard
+sudo dpkg-reconfigure keyboard-configuration
+sudo reboot
+man man
+man psswd
+man passwd
+whoami
+is
+id
+sudo su
+ls
+cd experimentos && ls
+ls
+cd pruebas
+ls
+echo "Hola mundo" > archivo.txt
+sudo echo "Hola mundo" > archivo.txt
+ls
+pwd
+cd ~
+ls
+cd experimentos/
+touch archivo.txt
+ls -ld experimentos
+cd ..
+ls -ld experimentos
+sudo rm experimentos/
+ls
+sudo su
+cd experimentos/
+echo "Hola mundo" > experimentos/archivo.txt
+cd..
+cd ..
+sudo su
+whoami
+sudo chown gabox:gabox experimentos
+ls
+cd experimentos/ 
+echo "Hola mundo" > experimentos/archivo.txt
+ls -ld experimentos
+echo "Hola mundo" > archivo.txt
+ls
+cat archivo.txt 
+ls
+cd experimentos/
+echo "Usuario=" $(whoami) > infousuario.txt 
+ls
+cat infousuario.txt 
+man grep
+sudo apt-get install manpages-es
+man ls
+export LANG=es_ES.UTF-8
+man ls
+echo 'export LANG=es_ES.UTF-8' >> ~/.bashrc
+source ~/.bashrc
+man ls
+sudo apt-get update
+sudo apt-get install manpages-es
+locale -a
+sudo locale-gen es_ES.UTF-8
+sudo update-locale
+export LANG=es_ES.UTF-8
+man ls
+man grep
+sudo poweroff
+sudo useradd visitante
+sudo userdel visitante
+lost
+sudo adduser visitante
+cat etc group
+sudo groupadd prueba
+cat etc group
+sudo usermod -aG prueba guille
+sudo usermod -aG prueba visitante
+cat etc group
+id visitante
+cat /etc/passwd
+tree -d
+uname -a
+cat /proc/cpuinfo
+free -m
+ifconfig
+sudo poweroff
+ssh-keygen
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+ls
+cd repogit
+git clone git@github.com:gabrielmartos44/TP_AySO.git
+sudo apt install git
+git clone git@github.com:gabrielmartos44/TP_AySO.git
+cd TP_AySO/
+pwd
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release 
+grep -i HOME_URL /etc/os-release 
+grep home_url /etc/os-release
+grep -i HOME_URL /etc/os-release 
+whoami
+echo “Usuario=$(whoami)” > datos_usuario.txt
+cat datos_usuario.txt 
+git add .
+echo “Usuario=$(whoami)” > datos_usuario.txt
+ls
+git config --global user.email "gaboxduos@gmail.com"
+git config --global user.name "gabrielmartos44"
+git commit -m "ADD: agregado 1er
+ejercicio sobre datos_usuarios.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >>
+datos_usuarios.txt
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat datos_usuario.txt
+git status
+git add .
+git commit -m “feat: Añadiendo información de CPU”
+git status
+git commit -m "feat: Anadiendo informacion de CPU"
+cat <<EOF >> README.md
+Alumno: Gabriel Andrés Martos Zambrano
+División: 315
+Turno: Noche
+EOF
+
+cat README.md
+git add README.md datos_usuarios.txt && git commit -m "ADD: Añadiendo Readme y datos de usuario" && git push
+git add README.md datos_usuario.txt && git commit -m "ADD: Añadiendo Readme y datos de usuario" && git push
+history -a
